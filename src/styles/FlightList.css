@@ -1,0 +1,52 @@
+.container{
+  margin-top: 48px;
+}
+
+.table-wrapper {
+  max-height: 80vh;
+  overflow-y: auto;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.flight-table thead {
+  position: sticky;
+  top: 0;
+  background-color: #126fcb;
+  z-index: 102;
+}
+
+.flight-table th {
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  text-align: center;
+}
+
+@media (max-width: 1439px) {
+  .table-wrapper {
+    max-height: 75vh;
+  }
+}
+
+@media (max-width: 1023px) {
+  .table-wrapper {
+    max-height: 75vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .table-wrapper {
+    max-height: 75vh;
+  }
+
+  .flight-table th {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .flight-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+}

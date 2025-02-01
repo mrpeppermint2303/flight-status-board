@@ -1,0 +1,41 @@
+
+.container.flight-detail {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 48px;
+  padding: 20px;
+}
+
+.flight-detail-content {
+  background-color: #fff;
+  padding: 20px;
+  border-style: solid;
+  border-color: #a7d3ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .flight-detail-content {
+    padding: 15px;
+  }
+}
+
+.status-on-time {
+  color: green;
+}
+
+.status-boarding {
+  color: blue;
+}
+
+.status-delayed {
+  color: red;
+}
+
+.status-departed {
+  color: orange;
+}

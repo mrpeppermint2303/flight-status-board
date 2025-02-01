@@ -1,0 +1,81 @@
+
+.table-container {
+  max-width: 100%;
+  background-color: #ffffff;
+  overflow-x: auto;
+  padding: 0px;
+  filter: drop-shadow(4px 4px 6px #00000017);
+  border-radius: 6px;
+  border: 1.8px solid #a7d3ff;
+  position: relative;
+}
+
+.flight-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.flight-table thead {
+  position: sticky;
+  top: 0;
+  background-color: #126fcb;
+  z-index: 100;
+}
+
+.flight-table th {
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  text-align: center;
+}
+
+.flight-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  color: black;
+}
+
+.clickable-row:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+.status-on-time { color: #28a745 !important; }
+.status-boarding { color: #17a2b8 !important; }
+.status-delayed { color: #dc3545 !important; }
+.status-departed { color: #ffc107 !important; }
+
+@media (max-width: 1439px) {
+  .flight-table th, .flight-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 1023px) {
+  .flight-table th, .flight-table td {
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  .table-container {
+    border: 1.5px solid #a7d3ff;
+  }
+}
+
+@media (max-width: 767px) {
+  .table-container {
+    padding: 5px;
+    border: 1px solid #a7d3ff;
+  }
+
+  .flight-table th, .flight-table td {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+}
